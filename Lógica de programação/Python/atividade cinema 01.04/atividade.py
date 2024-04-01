@@ -78,7 +78,7 @@ print("\nAgora vamos ver quem irá assistir o filme do Oppenheimer...")
 
 amigos_oppenheimer = []
 for amigo, dados in amigos.items():
-    opcao = input(f"{amigo}, você gostaria de assistir ao filme do Oppenheimer (S/N)").upper()
+    opcao = input(f"{amigo}, você gostaria de assistir ao filme do Oppenheimer (S/N) ").upper()
     if opcao == "S":
         amigos_oppenheimer.append(amigo)
 
