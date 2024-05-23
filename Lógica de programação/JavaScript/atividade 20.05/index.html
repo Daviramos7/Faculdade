@@ -1,0 +1,42 @@
+<!--Fazer correção-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicío de Matrizes</title>
+</head>
+<body>
+    <script>
+    let nomes = [
+        ['', ''],
+        ['', '']
+    ];
+
+    let idades = [
+        [0, 0],
+        [0, 0]
+    ];
+
+    function lerEntradas() {
+        for (let i = 0; i < 2; i++) {
+            for (let j = 0; j < 2; j++) {
+                nomes[i][j] = prompt('Digite o nome para a posição [${i}][${j}]: ');
+                idades[i][j] = parseInt(prompt('Digite a idade para a posição [${i}][${j}]: '));
+            }
+        }
+
+        console.log("\nLista de nomes e idades equivalentes:");
+        for (let i = 0; i < 2; i++) {
+            for (let j = 0; j < 2; j++) {
+                console.log('Nome: ${nomes[i][j]}, Idade: ${idades[i][j]}');
+            }
+        }
+    }
+
+    lerEntradas();
+    </script>
+</body>
+</html>
