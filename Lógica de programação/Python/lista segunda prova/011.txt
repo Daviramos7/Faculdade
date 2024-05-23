@@ -1,0 +1,2 @@
+11. b) o algoritmo lista os nomes, mas vai mostrar apenas o último nome cadastrado 5 vezes
+Justificação: A variável nome armazena apenas o último valor lido e este valor será repetido 5 vezes na segunda parte do algoritmo.

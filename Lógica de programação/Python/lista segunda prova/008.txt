@@ -1,0 +1,2 @@
+8. b) média
+Justificação: Este comando divide o total pela qtd, calculando a média.

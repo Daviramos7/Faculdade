@@ -1,0 +1,2 @@
+9. a) o programa emite a média da soma dos números entre 1 e 300
+Justificação: O programa acumula a soma de i de 1 até 300 em x e depois imprime a média dividindo o total por 300.

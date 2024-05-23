@@ -1,0 +1,2 @@
+3. a) No visualg, o comando PARA usa uma variável de controle do tipo caracter, inteiro ou literal.
+Justificação: A variável de controle no comando PARA deve ser do tipo inteiro. Não pode ser do tipo caracter ou literal.

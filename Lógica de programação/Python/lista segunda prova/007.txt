@@ -1,0 +1,2 @@
+7. a) acumulador
+Justificação: Este comando soma o valor atual de x com valor e armazena o resultado em x, caracterizando um acumulador.

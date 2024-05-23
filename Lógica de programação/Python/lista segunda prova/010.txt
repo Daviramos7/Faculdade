@@ -1,0 +1,2 @@
+10. b) o programa inicia uma contagem e termina rapidamente, pois o valor inicial é maior que o final - na hora em que for executado não vai mostrar nada
+Justificação: O loop Para i:=1000 ate 1 faça não executa porque o valor inicial é maior que o final e o passo não foi especificado como negativo. Portanto, o programa não imprime nada.
