@@ -1,0 +1,33 @@
+header
+    height: 50px
+    background: $purple
+    nav
+        height: 50px
+        @include displayFlex(row, space-evenly, center)
+        .link
+            color: $white
+            transition: all 0.3s
+            &:hover
+                color: $yellow
+    .menu-lado
+        display: none
+@media only screen and (max-width: 500px)
+    header
+
+        .menu-topo
+            display: none
+        .menu-lado
+            display: block
+            .menu-barra
+                width: 50px
+                height: 50px
+            .menu-container
+                position: fixed
+                width: 0
+                top: 0
+                left: 0
+                overflow: hidden
+                background: black
+                height: 100%
+                transition: width 0.3s
+                @include displayFlex(column, space-around, center)
