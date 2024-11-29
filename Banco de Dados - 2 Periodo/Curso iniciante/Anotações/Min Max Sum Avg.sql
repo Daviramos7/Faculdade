@@ -1,0 +1,1 @@
+funções de agregação basicamente agregam ou combinam dados de uma tabela resultado só
