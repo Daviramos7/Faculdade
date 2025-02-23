@@ -1,0 +1,22 @@
+h1#Titulo {
+    color: purple;
+    font-family: "segoe-script";
+    text-align: justify;
+    font-size: 32px;
+    font-weight: bolder;
+    margin-left: 15vh;
+}
+
+p#Letra {
+    font-size: 16px;
+    text-align: justify;
+    color: black;
+    margin-left: 22vh;
+    font-weight: lighter;
+}
+
+footer#Autor {
+    color: blue;
+    font-size: 20px;
+    margin-left: 34vh;
+}
