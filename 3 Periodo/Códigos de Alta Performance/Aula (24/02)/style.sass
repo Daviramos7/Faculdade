@@ -1,0 +1,37 @@
+// nova versão (mais recomendado)
+@use 'mixins' as *
+//versão antiga (obsoleta: @import)
+@use 'variables' as *
+    
+// reset geral
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+    font-size: 1.3rem
+    font-family: system-ui
+
+header
+    height: 60px
+    background: $purple
+    nav
+        height: 60px
+        @include displayFlex(space-evenly, center, 0px)
+        
+        a
+            color: $fontColor
+            transition: all 0.3s
+            &:hover
+                transform: scale(1.1)
+
+main
+    padding: 20px 0
+    .container
+        @include displayFlex(center, center, 10px)
+        
+        .card
+            width: 200px
+            height: 300px
+            border-radius: 7px
+            background: $cardColor
