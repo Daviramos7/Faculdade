@@ -1,0 +1,41 @@
+Primeira Aula
+
+    Serviços -> (- TRABALHO OPERACIONAL) (+ TRABALHO INTELECTUAL)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Segunda Aula
+
+    DHCP
+        Receberá a demanda de novos hosts e acossiara a um endereço, fornecer tradução de nomes para acessar sites e servidores
+
+    DNS
+        Relaciona o nome ao endereço IP oferecendo segurança e privacidade ao mesmo tempo que facilita o acréscimo ou exclusão de usuários através da inclusão de um domínio corporativo LDAP
+    
+    NTP
+        Padronização de horários de acesso de funcionários e gravações de CFTV que é provido pelo servidor de horários
+
+    Backup
+        Cópia de segurança e restaurações de forma periodica e temporária
+    
+    Centralização de serviço de impressão
+        se não for otimizado o custo das empresas se tornam altos demais
+    
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Terceira Aula
+
+    Fibra Óptica
+        Barateamento da fibra e tecnologia mais sofisticada e pela sua própria Instalação
+        É feito pelo cabo de vidro (silicio) faz a transmissão de sinais luminosos para o receptor 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Quarta Aula
+
+    Cabo trançado
+        Possuem pares trançados internos com revestimento plástico com cada um com cor especificas sólida em um e combinada com branca no outro EX: verde total em um, verde com branco na outra.
+            Cores: (verde laranja, azul e marrom)
+                Par verde transmissor, par laranja receptor se faz reversão automatica, o que acontece? 
+                    Transmissor conversando com Transmissor, Receptor conversando com Receptor, o que não gera nenhuma comunicação
+                    

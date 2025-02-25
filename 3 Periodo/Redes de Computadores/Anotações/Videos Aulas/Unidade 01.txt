@@ -1,0 +1,35 @@
+Primeira Aula
+
+    Sinal analógico:
+        Onda senoidal
+        Complexo + Processamento
+
+    Sinal digital:
+        Onda quadrade
+        Nivel de sinal - Processamento 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Segunda Aula
+
+    Formas de comunicação
+    Transmissor / Receptor / Mídia
+
+        comunicação simplex (Tv)
+        Transmissor > Receptor (Acontece em apenas uma direção)
+
+        comunicação half-duplex (Walk talkie)
+        Transmissor - Receptor (A mesma via hora para subir hora para receber)
+
+        comunicação full-duplex (Fibra otica)
+        Transmissor = Receptor (Nos dois sentidos simultaneamente)
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Terceira Aula
+
+    Onda portadora
+        Sinal Modulante
+        Frequência constante
+        Taxa de transmissão -> Mbps
+

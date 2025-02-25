@@ -1,0 +1,48 @@
+Primeira Aula
+
+    95% -> Camada física
+        Interferência Externa
+        Instalação inadequada
+        Transmissão
+
+    Camada de enlace
+        Identifica erros de transmissão
+        Correção dos erros
+        Receber os bits
+        Validar informação
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Segunda Aula
+
+    Ethernet
+        ATMoE, PPPoE, FRoE 
+        OE - OVER ETHERNET
+
+        ÉTER 
+            Inexistência de vácuo
+            Propagação da luz (atualmente teoria rejeitada pela ciência)
+            Pela filósfia grega ele é o Quinto elemento
+        
+        CSMA/CD 
+            Verificação do meio para avaliar o tráfego antes do envio dos pacotes
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Terceira Aula
+
+    MAC (Media acess control)
+        Como se fosse um porteiro, diz o que entra e sai no receptor, papel de barrar informações inadequadas ou que vem em excesso
+        Pacotes que vem com endereços errados é ele quem devolve
+        Quando se recebe uma capacidade de informação maior que a suportada ele que trata 
+    
+    LLC (logical link control)
+        Basicamente faz analise das informações que são recebidas após a ultrapassagem do MAC verificando bit a bit e colocando em ordem
+        Ele é responsável por solicitar a retransmissão dos itens ao MAC 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Quarta Aula
+
+    Datagrama do quadro Ethernet
+        Formato que são organizados bit a bit, Uma sequencia alternada de 1 e 0, e utilizado apenas para a sincronização com a frequencia (CLOCK) depois o endereço de origem e destino, comprimento suprimido pelo tipo que é a maior parte do pacote e no final tem-se o CRC que verifica se os bits que constam no pacote são os que sairam do transmissor e se não houve perda ou alteração no caminho.

@@ -1,0 +1,52 @@
+Primeira Aula
+
+    Identificação de cada dispositivo
+        Controle de entrada e saída
+        Conexão de pacotes ou circuitos
+    
+    IP, MÁSCARA E GATEWAYS
+        UDP
+            Protocolo que faz a comutação de pacotes sem a garantia de que chegara ao final
+
+        TCP
+            Faz um túnel virtual entre transmissor e receptor portanto tudo que saí é recebido do outro lado
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Segunda Aula
+
+    Endereçamento
+        IPV4
+            Formado por 4 octetos cada um com 32bits cada formando uma combinação de aproximadamente 4 bilhões de endereço
+        
+        IEEE RFC NAT
+            Segrega redes privadas das públicas
+                Um endereço por empresa, escola ou residência. Internamente todos os dispositivos possuem um endereçamento próprio (LANS) -> GATEWAY -> Rede Pública
+
+        IPV6 
+            Ao invès de ultilizar apenas 32bits usasse 128 bits
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Terceira Aula
+
+    Roteamento IP
+        Estático
+            Se baseia no fato que todos os endereços vão para o mesmo roteador e daí eles irão para uma rede pública
+            Padrão de Rota 0.0.0.0 irá redirecionar tudo para uma porta única
+            Se existir redes distintas usasse rotas especificas para interfarces especificas alguns casos usasse servidor como roteador e faz a passagem do pacote de interface para outra em redes distintas (IP FORWARDING).
+            Uma Solução simples que demanda pouco processamento dos equipamentos tornando mais barato e acessiveis, solução boa para empresas.
+        
+        Dinâmico
+            Vetor Distância
+                Trabalha sempre com a menor Distância 
+
+                RIP (Routing information Protocol)
+                    Troca informações com roteadores vizinhos e conta a quantidade de saltos para definir o melhor caminho
+                    Um processo que é lento pois o desempenho é comprometido quando a rede é muito extensa e possuem muitas rotas
+                
+                DIJKSTRA
+                    Analisa a quantidade de saltos e o estado do enlace, mapeia a rede toda variando o melhor caminho de acordo com a utilização da rede 
+                    É mais leve por trocar menos mensagem mas demanda maior processamento
+                    
+            Estado de Enlace
