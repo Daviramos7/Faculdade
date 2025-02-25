@@ -1,0 +1,131 @@
+Classificação das redes de computadores:    
+    
+    Quanto a garantia de entrega de dados:
+
+        Uma conexão que usa handshake:
+            Protocolo que garante confiabilidade, segurança, criptografia e controle (com RTT - Round trip time)
+
+            Orientada a conexões:
+                É feita de 3 etapas
+                    O TX envia um periodo de conexão ao RX "SYN" (Sincronizar)
+                    O RX aceita e estabelece a conexão (SYN-ACK)
+                    O TX envia os dados
+                    A cada pacote recebido o RX envia "ACK"
+                    Quando o TX terminar, ele enviará um pedido de término de conexão ao RX "fin" (Finish)
+
+            Protocolos que usam handshake:
+                - **TCP (Transmission Control Protocol):** Utiliza um handshake de três vias para estabelecer uma conexão confiável antes da transmissão de dados.  
+                - **TLS (Transport Layer Security):** Implementa um handshake para negociar criptografia e autenticação segura entre cliente e servidor.  
+                - **SSH (Secure Shell):** Realiza um handshake para autenticação segura e estabelecimento de uma conexão criptografada.  
+                - **Bluetooth:** Usa um processo de handshake para emparelhamento e autenticação entre dispositivos.  
+                - **Protocolos de Email (SMTP, IMAP, POP3 com SSL/TLS):** Podem realizar um handshake para estabelecer uma comunicação segura via TLS/SSL.  
+                - **FTP (File Transfer Protocol):** Quando usado com TLS (FTPS), realiza um handshake para negociação de segurança antes da transferência de arquivos.
+
+
+            Não Orientada a conexões:
+                O TX simplesmente envia os pacotes de dados esperando que eles cheguem ao destino
+
+    Quanto a Topologia
+        Se refere a forma de como os dispositivos estão interconectados em uma rede
+        Influencia diretamente no: Desempenho, confiabilidade, custo, escalabilidade, gerenciamento.
+
+        Topologia Lógica vs Fisica:
+            Fisica: se refere á disposição de cabos e dispositivos.
+            Lógica: se refere a forma de como os dados fluem na rede, independentemente da disposição fisica.
+
+        Topologia totalmente conectada:
+            Necessitam de (n(n-1)/2);
+            Também conhecida de malha.
+
+        Topologia em malha parcial:
+            (usa-se menos cabos).
+
+        Topologia em anel:
+            Arquitetura em Token Ring e FDDI.
+            Conectados em um circulo
+            Evita colisões
+            Falha em um, falha em toda a rede 
+
+        Topologia linear:
+            Também chamada de barramento;
+            Usa cabo coaxial ou Cabo UTP com HUB.
+            Simples, Baixo custo
+            Pouco escalável, falha no cabo afeta toda a rede 
+
+        Topologia em Estrela:
+            Cabo UTP com Switch.
+            Mais usada.
+
+        Topologia em árvore ou hierárquica:
+            Combinação de topologias em estrela, formando uma hierarquia.
+            
+        Topologia sem fio:
+            Wireless Access Point.
+
+
+    Quanto ao método de Transmissão
+        
+        Método de contenção:
+            Ethernet (C/ cabo coaxial) e WI-FI;
+            Usa algoritmo probabilistico;
+            Uso de hub ou cabo coaxial;
+            Somente um computador usa o meio de transmissão.
+
+        Passagem de ficha:
+            Token Ring e FDDI;
+            Uso de algoritmo deterministico.
+
+        Varredura("Polling"):
+            Redes em ponto-a-multiponto;
+            A estação de controle, possui uma lista de computadores que querem ter acesso ao cabeamento;
+            Cada computador espera a sua vez.
+    
+    
+    Quanto à Arquitetura:
+
+        Ethernet(rede cabeada);
+        WI-FI (sem cabos);
+        Token Ring, Frame Replay, ATM, etc.
+
+
+    Quanto à Pilha de Protocolos:
+
+        TCP/IP;
+        IPX/SPX etc.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Componentes das redes de computadores:
+
+    Servidor -> Segmento -> HUB -> Cabo (Pacote de dados) -> Placa de Rede -> Cliente (Para recursos: Computadores, Impressora, ETC.)
+
+    Dispositivos finais: computador desktop, laptop ETC.
+    Dispositivos intermediários: Roteador, Switch Lan, Roteador sem fio, Switch multicamada, Equipamento de Firewall.
+    Meios da rede: Meios sem fio, Midia de lan e Midia WAN.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Um pacote de dados:
+
+    O pacote é o termo mais genérico e frequentemente usado para se referir a qualquer unidade de dados que é transmitida em uma rede.
+        CABEÇALHO: HEADER.
+        DADOS: PAYLOAD.
+        RODAPÉ: TRAILER.
+            PDU (Protocol Data Unit): Este é um termo genérico que se refere a qualquer unidade que é transmitida entre camadas do modelo OSI.
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Largura de banda e Taxa de Transferência:
+    Largura de Banda:
+        Capacidade de um meio transportar os dados;
+        Mede a quantidade de dados que podem fluir de um lugar para o outro durante um determinado tempo
+        É a medida em Kbps, Mbps e Gbps.
+
+    Taxa de Transferência (throughput):
+        É a medida de transferência de bits através do meio fisico dutante um determinado periodo
+        A taxa de transferência não corresponde à largura de banda, devido a fatores como:
+            Quantidade de dados enviados e recebidos na conexão;
+            A latência criada pelo número de equipamentos entre a origem e o destino.
+        O termo latência se refere ao tempo necessário para os dados viajarem de um ponto a outro, incluido atrasos;
+        Não leva em consideração a validade ou utilidade dos bits transmitidos e recebidos.
+
