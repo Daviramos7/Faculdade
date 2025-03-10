@@ -1,0 +1,37 @@
+Densidade Númerica
+
+    Binária:
+        0, 1, 10, 11, 100, 101, 110, 111, 1000, 1001, 1010...
+    
+    Decimal:
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13...
+
+    Hexadecimal:
+        0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F...
+
+    (ABC)16 = (?)10
+        16x16² + (1.16¹ + 12.16⁰) = (2748)10
+
+Registradores (GRP- 32 BITS)
+
+    EAX --> ACUMULADOR (Usado em operação aritmética)
+
+    EBX --> PONTEIRO PARA DADOS
+    
+    EOX --> CONTADOR EM REPETIÇÕES
+
+    EDX --> E/S
+    
+    ESI --> PONTEIRO PARA UMA STRING DE ORIGEM
+
+    EDI --> PONTEIRO PARA UMA STRING DE DESTINO
+    
+    ESP --> PONTEIRO PARA O TOPO DA PILHA
+
+    EBP --> PONTEIRO PARA A BASE DA PILHA
+
+16 Bits
+    EAX --> AX
+
+8 Bits
+    AX --> AH e AL
