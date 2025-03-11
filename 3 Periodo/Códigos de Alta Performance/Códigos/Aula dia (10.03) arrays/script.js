@@ -12,7 +12,7 @@ let nomes = ['marlon', "carlos", `maria`, 'carol']
 //console.log(nomes)
 
 // manipulação de um elemento de array
-nomes[2] = "carina"
+//nomes[2] = "carina"
 //console.log(nomes)
 
 //como descobrir o tamanho de um array
@@ -115,18 +115,18 @@ nomes[2] = "carina"
 // }
 
 // funções anônimas
-let x = function() {
-    console.log('oi')
-}
-x()
+// let x = function() {
+//     console.log('oi')
+// }
+// x()
 
-let y = () =>{
-    console.log('oi')
-}
-y()
+// let y = () =>{
+//     console.log('oi')
+// }
+// y()
 
 // o caso do arrow function mais reduzido
 // só pode haver uma linha de código no bloco de código
 // só pode haver uma entrada no parâmetro
-let z = a => console.log(a)
-z('oi')
+//let z = a => console.log(a)
+//z('oi')
