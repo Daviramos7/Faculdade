@@ -1,0 +1,178 @@
+Protocolo
+
+    Linguagem que os computadores falam
+
+        Email: TCP/IP instalada, existiram: Ethernet, IP, TCP
+
+Modelos
+
+    Camadas
+        Ajudam a visualizar o funcionamento conjunto dos diversos protocolos para a comunicação e representa a operação dos protocolos ocorrendo dentro de cada   camada, bem como a interação com camadas em cima e em baixo
+        
+    Vantagens:
+        Auxilia mo projeto de protocolos, pois operam em uma camada específica
+        Estimula a competição pois os produtos de diferentes fornecedores podem funcionar juntos
+        Permite que ocorra mudanças tecnológicas sem outro nível ser afetado
+        Fornece uma linguagem em comum
+
+
+    Modelo de protocolo
+        descreve um conjunto específico de regras e convenções que regem a comunicação entre dispositivos ou sistemas dentro de uma rede. Ele detalha como os dados devem ser formatados, transmitidos e recebidos, garantindo a interoperabilidade entre diferentes dispositivos.
+
+    Modelo de referência
+        que serve como uma estrutura teórica para entender e padronizar redes, o modelo de protocolo se refere a implementações reais usadas na comunicação entre sistemas.
+
+
+    Modelo OSI
+        7 Camadas
+
+            Aplicação, Apresentação, Sessão, Transporte, Rede, Link de Dados, Física.
+
+            Física 🖧
+            Responsável pela transmissão de bits através do meio físico (cabos, ondas de rádio, fibra óptica).
+            Exemplo: Ethernet, Wi-Fi, Bluetooth.
+            
+            Enlace de Dados (Link de Dados) 🔗
+            Garante que os dados sejam transmitidos de forma confiável entre dispositivos na mesma rede.
+            Lida com endereçamento MAC, detecção e correção de erros.
+            Exemplo: Ethernet, Switches, PPP (Point-to-Point Protocol).
+            
+            Rede 🌐
+            Define o roteamento dos pacotes entre redes diferentes.
+            Utiliza endereçamento lógico (IP) e protocolos de roteamento.
+            Exemplo: IP (Internet Protocol), ICMP, Roteadores.
+            
+            Transporte 🚚
+            Garante a entrega confiável ou não dos dados entre dispositivos.
+            Divide os dados em segmentos e pode oferecer controle de fluxo e correção de erros.
+            Exemplo: TCP (confiável), UDP (não confiável).
+            
+            Sessão 🔄
+            Gerencia a comunicação entre aplicações, mantendo e sincronizando sessões.
+            Controla o início, manutenção e encerramento das conexões.
+            Exemplo: Protocolos como NetBIOS, RPC.
+            
+            Apresentação 🎭
+            Tradução, compressão e criptografia dos dados para garantir compatibilidade entre sistemas diferentes.
+            Exemplo: SSL/TLS (criptografia), JPEG (compressão de imagem), ASCII (codificação de texto).
+            
+            Aplicação 📲
+            Interface direta com o usuário e as aplicações.
+            Define protocolos para comunicação de alto nível, como envio de e-mails e navegação web.
+            Exemplo: HTTP, FTP, SMTP, DNS.
+                
+
+    Modelo TCP/IP
+        4 Camadas
+            Aplicação (Implementada a Aplicação, Apresentação e Sessão do Modelo OSI), Transporte, Internet e Interface com a Rede(Implementa o Enlace de Dados e Física do Modelo OSI).
+
+            Aplicação 📲
+            Equivalente às camadas Aplicação, Apresentação e Sessão do Modelo OSI.
+            Responsável pela comunicação entre aplicações e serviços de rede.
+            Protocolos: HTTP, FTP, SMTP, DNS, POP3, IMAP.
+            
+            Transporte 🚚
+            Equivalente à camada de Transporte do Modelo OSI.
+            Garante a entrega confiável (ou não) dos dados entre sistemas.
+            Protocolos: TCP (confiável, orientado à conexão), UDP (rápido, mas sem garantia de entrega).
+            
+            Rede (Internet) 🌐
+            Equivalente à camada de Rede do Modelo OSI.
+            Define o roteamento dos pacotes entre redes diferentes e usa endereçamento lógico.
+            Protocolos: IP (endereçamento e roteamento), ICMP (controle e mensagens de erro), ARP (resolução de endereços MAC/IP).
+            
+            Interface com a Rede (Acesso à Rede) 🖧
+            Equivalente às camadas Enlace de Dados e Física do Modelo OSI.
+            Controla a transmissão de dados pelo meio físico da rede (cabos, Wi-Fi, fibra óptica).
+            Protocolos: Ethernet, Wi-Fi, Bluetooth, DSL, PPP.
+
+    (O Modelo OSI é um framework de referência valioso para entender conceitos de rede enquanto o Modelo TCP/IP é o modelo prático que impulsiona a rede).
+
+
+Níveis dos protocolos
+
+    📡 Protocolos de Baixo Nível
+    Operam nas camadas inferiores do modelo de rede (Física, Enlace e Rede).
+    São responsáveis pela transmissão dos dados e pelo endereçamento dos dispositivos.
+    Trabalham diretamente com hardware, sinais elétricos e pacotes de rede.
+        🔹 Exemplos:
+        Ethernet – Comunicação por cabo.
+        Wi-Fi – Comunicação sem fio.
+        Bluetooth – Transmissão de dados de curto alcance.
+        IP (Internet Protocol) – Endereçamento e roteamento.
+        ARP (Address Resolution Protocol) – Mapeamento de endereços IP para MAC.
+
+    🌍 Protocolos de Alto Nível
+    Operam nas camadas superiores do modelo de rede (Transporte e Aplicação).
+    São responsáveis pela comunicação entre aplicações, transferência de arquivos e navegação web.
+    Trabalham diretamente com softwares e serviços de internet.
+        🔹 Exemplos:
+        TCP (Transmission Control Protocol) – Transmissão confiável de dados.
+        UDP (User Datagram Protocol) – Transmissão rápida sem garantias.
+        HTTP/HTTPS – Comunicação para sites e serviços web.
+        SMTP/IMAP/POP3 – Protocolos de e-mail.
+        FTP – Transferência de arquivos.
+        DNS – Conversão de domínios em endereços IP.
+
+Encapsulamento/Desencapsulamento
+
+    Onde dados de um protocolo de uma camada superior sao colocados dentros de outras.
+
+    Encapsulamento 🔒
+        Ocorre quando os dados de uma camada superior são colocados dentro de uma estrutura de protocolo da camada inferior.
+        Cada camada adiciona suas informações de controle (chamadas de cabeçalho e, em alguns casos, trailer), formando um PDU (Unidade de Dados do Protocolo).
+        Exemplo: Quando um usuário envia um e-mail, os dados passam por todas as camadas do modelo TCP/IP, ganhando novos cabeçalhos em cada uma.
+            Ordem do Encapsulamento no Modelo TCP/IP:
+            Aplicação → Dados
+            Transporte → Segmento (TCP) ou Datagrama (UDP)
+            Rede → Pacote (IP)
+            Interface com a Rede → Quadro (Ethernet) → Bits (Físico)
+
+    Desencapsulamento 🔓
+        Ocorre no destino, onde cada camada remove as informações extras adicionadas pela camada correspondente do remetente.
+        Esse processo continua até que os dados cheguem à aplicação final.
+    
+            Ordem do Desencapsulamento:
+
+            Bits são recebidos pela Interface de Rede
+            Convertidos em Quadros e enviados para a camada de Rede
+            Pacotes são extraídos e passados para a camada de Transporte
+            Segmentos são entregues à Aplicação, que finalmente lê os Dados originais.
+
+Comunicação entre Camadas 
+    Referese a maneira como as diferentes camadas do modelo interagem e trabalham juntos para transmitir os dados
+
+    1️⃣ Comunicação Vertical (Dentro do Mesmo Dispositivo)
+    Ocorre dentro do mesmo dispositivo (remetente ou destinatário).
+    Cada camada se comunica diretamente apenas com a camada imediatamente superior e inferior.
+    O processo segue a estrutura do encapsulamento e desencapsulamento.
+    Exemplo:
+    A camada de Aplicação gera os dados.
+    A camada de Transporte adiciona um cabeçalho TCP/UDP.
+    A camada de Rede adiciona o endereço IP.
+    A camada de Enlace adiciona o endereço MAC e envia os bits pela camada Física.
+
+    2️⃣ Comunicação Horizontal (Entre Dispositivos Diferentes)
+    Ocorre entre dois dispositivos na rede (por exemplo, um computador e um servidor).
+    Cada camada de um dispositivo se comunica logicamente com a mesma camada no dispositivo remoto usando protocolos específicos.
+    Exemplo:
+    O protocolo HTTP da camada de Aplicação de um navegador conversa com o HTTP do servidor web.
+    O TCP do cliente se comunica com o TCP do servidor para garantir a entrega confiável dos dados.
+    O IP de ambos os dispositivos roteia os pacotes corretamente pela rede.
+
+Unidade de Dados
+
+    Aplicação → Dados 📄
+        Informações brutas geradas pela aplicação (e-mails, páginas web, arquivos).
+
+    Transporte → Segmento (TCP) ou Datagrama (UDP) 🚚
+        A camada de Transporte adiciona um cabeçalho TCP (se for confiável) ou UDP (se for rápido, mas sem garantia de entrega).
+
+    Rede (Internet) → Pacote 📦
+        O cabeçalho IP é adicionado, definindo o endereço de origem e destino para roteamento.
+
+    Interface com a Rede → Quadro (Frame) 🔲
+        O pacote IP recebe um cabeçalho de enlace (endereços MAC) e é convertido em quadros para transmissão.
+
+    Física → Bits ⚡
+        O quadro é convertido em sinais elétricos, ondas de rádio ou pulsos de luz para transmissão pelo meio físico (cabos, Wi-Fi, fibra óptica).
