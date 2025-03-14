@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Calcular fórmula de Baskara</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Calculadora de equação de Segundo Grau</h2>
+    <p>Digite os coeficientes da equação: <strong>Ax² + Bx + C = 0</strong>; </p>
+    <label for="a">Valor de A:</label>
+    <input type="number" id="a" required>
+    <br><br>
+
+    <label for="b">Valor de B:</label>
+    <input type="number" id="b" required>
+    <br><br>
+
+    <label for="c">Valor de C:</label>
+    <input type="number" id="c" required>
+    <br> <br>
+
+    <button onclick="calcularRaizes()">Calcular Raízes</button>
+
+    <h3>Resultado:</h3>
+    <p id="equacao"></p>
+    <p id="resultado"></p>
+</body>
+</html>
