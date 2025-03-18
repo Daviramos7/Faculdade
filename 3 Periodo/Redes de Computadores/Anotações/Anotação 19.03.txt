@@ -1,0 +1,102 @@
+A camada física modelos OSI e TCP/IP
+
+    Nos dois modelos a camada física mais baixa é fundamental pela transmissão bruta de bits atráves do meio físico.
+
+    Funções Específicas
+        Transmissão de bits, Especificação de Hardware, Codificação de Sinais, Sincronização, Topologia física.
+
+Tipos de meios de transmissão
+    Meios Guiados
+        Cabo trançado
+        Cabo coaxial
+        Fibra óptica
+            (Multimodo Vários comprimentos de onda /// Monomodo como se fosse laser, um comprimento de onda).
+        
+Categorias de meios de transmissão
+    Meios não guiados e Meios guiados
+
+        Não guiados
+            Sem fio / usam ondas eletromagnéticas para transmissão (wifi).
+        Tipos de meios Não guiados
+            Rádio, Micro-ondas, Infravermelho.
+
+    Meios guiados (meios de transmissão, lá em cima).
+
+Canal de comunicação
+
+    Um canal de comunicação é meio físico ou lógico pelo qual a informação é transmitida.
+
+    Podem ser divididos em vários canais atráves da modulação. é o processo de alterar uma ou mais propriedades de um sinal portador (como amplitude, frequência ou fase) com um sinal de mensagem (a informação será transmitida).
+
+    Essencial para adaptar o sinal da mensagem às características do canal de comunicação, permitindo uma transmissão eficiente e confiável.
+
+    Se o mesmo canal é compartilhado entre vários dispositivos ele é denominado *Barramento* sendo possivel as seguintes mensagens
+        -Broadcast
+        -Multicast
+        -Unicast
+
+        Em barramento, apenas dois dispositivos podem comunicar entre si ao mesmo tempo
+
+        Topologias e modos de comunicação
+
+            -Ponto a Ponto
+                Conecta dois nós ou dispositivos diretamente.
+
+            -Ponto Multiponto
+                Um único nó central se comunica com múltiplos nós remotos.
+
+            -Multiponto-Ponto
+                Vários nós para um único ponto (acho que é isso).
+
+Codificação de Sinais
+
+    Converte bits em sinais analógicos (ou vice e versa) para transmissão atráves do meio físico
+        Dado -> Codificação -> Sequência de Bits -> Codificação de Linha -> Sinal Digital.
+        Imagem  Mime           01010101010011010    Manchester
+        Texto   ASCII                               RZ
+        Vídeo   UNICODE                             NRZ
+        Arquivo etc.                                etc.
+
+
+    Código NRZ é mais usual
+
+    Se o meio é analógico, os dados a serem transmitidos após a codificação precisam ser modulados em outro sinal analógico.
+
+        Modulação
+            Alteração de uma das características do sinal de informação
+            wifi usa a técinica OFDM
+            -Modulação em amplitude
+            -Modulação em frequência
+
+Transferência de Dados
+
+    Existem duas formas
+        Transmissão Serial e a Transmissão Paralela
+
+Sincronismo entre dispositivos
+    O transmitor e o receptor precisam de algum mecanismo para identificar o início dos dados sendo transmitidos
+    Transmissões que usam um sinal de clock são chamadas de síncronas
+        Não é usada nas redes de computadores por...
+
+        Transmissão diferencial
+            Consiste em enviar o mesmo sinal em dois fios diferentes porém a polaridade invertida no segundo fio.
+                é criado um campo eletromagnético em sentido contrário ao fio principal
+                os cabos UTP em "par trançado" usam essa técinica
+
+Detecção e Correção de erros
+    Durante o processo de transmissão e armazenamento durante os dados é necessário um mecanismo para saber se os dados chegaram íntegros e efetuar a correção se necessário.
+    (Rede de computador não faz correção!!! apenas dececta o que está errado e os protocolos agem para corrigir)
+    As principais técinicas são:
+        -Paridade 
+        -Repetição
+            Consiste em transmitir o mesmo dado várias vezes e comparar os valores
+        -ECC
+            Regra de Hamming: 2^m > m + k + 1, onde:
+            M: é o número de bits adicionais de verificação
+            K: é o número de bits do dado a ser armazenado
+        -Soma de verificação
+            é o resultado da soma de todos os dados presentes no pacote de dados, descartando o "vai um"
+        -CRC
+            Usado para detectar e corrigir erros (pela retransmissão do pacote no TCP);
+            São usados polinômios;
+            É enviado no rodapé do pacote de dados.
